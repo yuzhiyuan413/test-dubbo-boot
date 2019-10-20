@@ -1,0 +1,13 @@
+package yzy.testdubbobootprovider;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class TestDubboBootProviderApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
