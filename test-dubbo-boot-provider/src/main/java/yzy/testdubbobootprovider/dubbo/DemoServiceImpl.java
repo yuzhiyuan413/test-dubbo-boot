@@ -1,5 +1,6 @@
 package yzy.testdubbobootprovider.dubbo;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import yzy.testdubbobootapi.dubbo.DemoService;
 
 
@@ -7,7 +8,7 @@ import java.net.InetAddress;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
+@Service
 public class DemoServiceImpl implements DemoService {
     @Override
     public String sayHello(String content) {
