@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="test-dubbo-boot-api" />
+        <module name="test-dubbo-boot-provider" />
+        <module name="test-dubbo-boot-consumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="test-dubbo-boot" target="1.8" />
+      <module name="test-dubbo-boot-api" target="1.8" />
+      <module name="test-dubbo-boot-consumer" target="1.8" />
+      <module name="test-dubbo-boot-provider" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="test-dubbo-boot" options="-parameters" />
+      <module name="test-dubbo-boot-api" options="-parameters" />
+      <module name="test-dubbo-boot-consumer" options="-parameters" />
+      <module name="test-dubbo-boot-provider" options="-parameters" />
+    </option>
+  </component>
+</project>
