@@ -2,6 +2,8 @@ package yzy.testdubbobootprovider.dubbo;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import yzy.testdubbobootapi.dubbo.DemoService;
+import yzy.testdubbobootprovider.factory.PayServiceFactory;
+import yzy.testdubbobootprovider.service.PayService;
 
 
 import java.net.InetAddress;
@@ -18,5 +20,11 @@ public class DemoServiceImpl implements DemoService {
         } catch (Exception e) {
             return "not net";
         }
+    }
+
+    @Override
+    public String pay(String userType) {
+        PayService payService = PayServiceFactory.getByUserType(userType);
+        return payService.pay();
     }
 }

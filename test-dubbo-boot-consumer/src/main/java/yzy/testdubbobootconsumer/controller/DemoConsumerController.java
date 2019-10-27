@@ -22,4 +22,12 @@ public class DemoConsumerController {
         map.put("error",yuzhiyuan);
         return map;
     }
+
+    @GetMapping("/dubbo/pay")
+    public Map<String, Object> pay() {
+        String x = demoService.pay("common-user");
+        Map<String,Object> map = Maps.newHashMap();
+        map.put("result",x);
+        return map;
+    }
 }
